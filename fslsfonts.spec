@@ -5,6 +5,7 @@ Summary:	List fonts served by X font server
 Group:		Development/X11
 Source0:	http://xorg.freedesktop.org/releases/individual/app/%{name}-%{version}.tar.bz2
 License:	MIT
+Patch0:		fslsfonts-aarch64.patch
 
 BuildRequires:	libfs-devel >= 1.0.0
 BuildRequires:	libx11-devel >= 1.0.0
@@ -15,6 +16,7 @@ Fslsfonts lists the fonts that match the given pattern.
 
 %prep
 %setup -q
+%apply_patches
 
 %build
 %configure2_5x	\
