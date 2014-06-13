@@ -1,7 +1,7 @@
 Summary:	List fonts served by X font server
 Name:		fslsfonts
 Version:	1.0.4
-Release:	5
+Release:	6
 Group:		Development/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org/
