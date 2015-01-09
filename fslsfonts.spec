@@ -1,7 +1,7 @@
 Summary:	List fonts served by X font server
 Name:		fslsfonts
-Version:	1.0.4
-Release:	8
+Version:	1.0.5
+Release:	1
 Group:		Development/X11
 License:	MIT
 Url:		http://xorg.freedesktop.org/
@@ -20,7 +20,7 @@ Fslsfonts lists the fonts that match the given pattern.
 %apply_patches
 
 %build
-%configure2_5x	\
+%configure	\
 	--x-includes=%{_includedir}\
 	--x-libraries=%{_libdir}
 
